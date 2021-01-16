@@ -103,7 +103,7 @@ span.psw {
 						<input type="password" class="form-control" placeholder="Confirm Password">
 					</div> -->
 					<button>
-						<span>Register</span>
+						<span>Form Register</span>
 					</button>
 					<div class="form-holder">
 						<span></span>
