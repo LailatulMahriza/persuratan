@@ -1,7 +1,7 @@
-
 <html>
     <head>
         <title>Multi Step Registration</title>
+        
         <style>
             body {
                 font-family:tahoma;
@@ -230,7 +230,6 @@
 
     </head>
     <body>
-
         <ul id="signup-step">
             <li id="personal" class="active">Informasi Data Diri</li>
             <li id="upload">Upload Berkas</li>
