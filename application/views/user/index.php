@@ -94,7 +94,7 @@
         <a class="nav-link" href="#"><i class="fa fa-home" aria-hidden="true"></i> Home<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="UserController/permintaan"><i class="fa fa-link" aria-hidden="true"></i>Permintaan
+        <a class="nav-link" href="UserController/permintaan"><i class="fa fa-link" aria-hidden="true"></i>Izin Penelitian
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -109,7 +109,7 @@
 
 <!-- HEADER -->
 <div class="container-fluid bg-1 text-center">
-  <h3>Persuratan Bankesbangpol</h3>
+  <h3>Persuratan Badan Kesatuan Bangsa dan Politik</h3>
   <img src="assets/img/surat.png" alt="Surat" width="5%" height="15%">
 </div>
 
