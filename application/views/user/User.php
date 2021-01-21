@@ -1,7 +1,7 @@
-
 <html>
     <head>
-        <title>Form User</title>
+        <title>Multi Step Registration</title>
+        
         <style>
             body {
                 font-family:tahoma;
@@ -148,27 +148,27 @@
                     
                 }
 
-                if ($("#download-field").css('display') != 'none') {
-                    if (!($("#phone").val())) {
-                        output = false;
-                        $("#phone-error").html("Phone required!");
-                    }
+                // if ($("#download-field").css('display') != 'none') {
+                //     if (!($("#phone").val())) {
+                //         output = false;
+                //         $("#phone-error").html("Phone required!");
+                //     }
 
-                    if (!($("#email").val())) {
-                        output = false;
-                        $("#email-error").html("Email required!");
-                    }
+                //     if (!($("#email").val())) {
+                //         output = false;
+                //         $("#email-error").html("Email required!");
+                //     }
 
-                    if (!$("#email").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
-                        $("#email-error").html("Invalid Email!");
-                        output = false;
-                    }
+                //     if (!$("#email").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
+                //         $("#email-error").html("Invalid Email!");
+                //         output = false;
+                //     }
 
-                    if (!($("#address").val())) {
-                        output = false;
-                        $("#address-error").html("Address required!");
-                    }
-                }
+                //     if (!($("#address").val())) {
+                //         output = false;
+                //         $("#address-error").html("Address required!");
+                //     }
+                // }
 
                 return output;
             }
@@ -230,7 +230,6 @@
 
     </head>
     <body>
-
         <ul id="signup-step">
             <li id="personal" class="active">Informasi Data Diri</li>
             <li id="upload">Upload Berkas</li>
@@ -268,8 +267,7 @@
             <div><input type="text" name="perihal" id="perihal" class="demoInputBox"/></div>
 
             <label><b>Waktu/Lama Penelitian</b></label>
-            <div><input type="date" value="yyyy-mm-dd" name="waktu_mulai_penelitian" id="waktu_mulai_penelitian" class="demoInputBox"/></div><br>
-            <div><input type="date" value="yyyy-mm-dd" name="waktu_selesai_penelitian" id="waktu_mulai_penelitian" class="demoInputBox"/></div>
+            <div><input type="date" value="yyyy-mm-dd" name="waktu_penelitian" id="waktu_penelitian" class="demoInputBox"/></div>
 
             <label><b>Lokasi/Tempat Penelitian</b></label><span id="lokasi_penelitian-error" class="signup-error"></span>
             <div><input type="text" name="lokasi_penelitian" id="lokasi_penelitian" class="demoInputBox"/></div>
@@ -295,10 +293,10 @@
             <div><input type="file" name="surat_pernyataan" id="surat_pernyataan" class="demoInputBox"/></div>
         </div>
 
-        <div id="download-field" style="display:none;">
+        <!-- <div id="download-field" style="display:none;">
             <label><b>Unduh Surat</b></label><span id="" class="signup-error"></span>
             <div><input type="text" name="" id="" class="demoInputBox"/></div>
-        </div> 
+        </div> -->
 
         <div>
             <input class="btnAction" type="button" name="back" id="back" value="Back" style="display:none;">

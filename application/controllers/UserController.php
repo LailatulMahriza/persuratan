@@ -13,6 +13,10 @@ class UserController extends CI_Controller {
         parent::__construct();
         $this->load->model('usermodel');
     }
+    public function Permintaan()
+    {
+        $this->load->view('user/user');
+    }
 
     public function index() {
         if ($this->input->post('finish')) {
@@ -56,12 +60,12 @@ class UserController extends CI_Controller {
 
                 );
                 $data['success'] = $result;
-                $this->load->view('user', $data);
+                $this->load->view('user/index', $data);
             } else {
-                $this->load->view('user');
+                $this->load->view('user/index');
             }
         } else {
-            $this->load->view('user');
+            $this->load->view('user/index');
         }
     }
 
