@@ -23,7 +23,8 @@ class UserController extends CI_Controller {
             $this->form_validation->set_rules('status', 'Status', 'trim|required');
             $this->form_validation->set_rules('NIK', 'NIP/NIM/NIK', 'trim|required');
             $this->form_validation->set_rules('perihal', 'Perihal Penelitian', 'trim|required');
-            $this->form_validation->set_rules('waktu_penelitian', 'Waktu/Lama Penelitian', 'trim|required');
+            $this->form_validation->set_rules('waktu_mulai_penelitian', 'Waktu/Lama Penelitian', 'trim|required');
+             $this->form_validation->set_rules('waktu_selesai_penelitian', 'Waktu/Lama Penelitian', 'trim|required');
             $this->form_validation->set_rules('lokasi_penelitian', 'Lokasi/Tempat Penelitian', 'trim|required');
             $this->form_validation->set_rules('tembusan_surat', 'Tembusan Surat', 'trim|required');
             $this->form_validation->set_rules('anggota_tim', 'Anggota Tim Peneliti', 'trim|required');
@@ -42,7 +43,8 @@ class UserController extends CI_Controller {
                     $this->input->post('status'), 
                     $this->input->post('NIK'), 
                     $this->input->post('perihal'),
-                    $this->input->post('waktu_penelitian'),
+                    $this->input->post('waktu_mulai_penelitian'),
+                    $this->input->post('waktu_selesai_penelitian'),
                     $this->input->post('lokasi_penelitian'),
                     $this->input->post('tembusan_surat'),
                     $this->input->post('anggota_tim'),
